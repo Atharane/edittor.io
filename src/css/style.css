@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap");
+
+.App {
+  font-family: "Playfair Display", serif;
+  min-height: 100vh;
+}
+
+.dark-mode {
+  background: #202020;
+  color: #fff;
+}
+
+#navbar {
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 40px;
+}
+
+#navbar > #logo {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+#logo > #text-crimson {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.switch {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin: 10px 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: rgb(155, 155, 230);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: rgb(155, 155, 230);
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset -8px -4px 0px 0px rgb(34, 34, 103);
+}
+
+#navbar > p {
+  margin: 0;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+#text-stats {
+  color: crimson;
+  margin: 0;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  background-color: inherit;
+  padding: 10px 0;
+  border: none;
+  resize: none;
+}
+
+textarea:focus {
+  border: none;
+}
+
+button {
+  text-transform: none;
+  margin-right: 10px;
+}
+
+.dark-button {
+  color: #fff;
+}
+
+.dark-button:hover {
+  color: goldenrod;
+}
+
+button:hover {
+  border-color: goldenrod;
+}
