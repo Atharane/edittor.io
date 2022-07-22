@@ -39,6 +39,7 @@ export default function Editor(props) {
       >
         Remove Extra Spaces
       </button>
+      
     </div>
   );
 }
